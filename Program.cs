@@ -49,7 +49,7 @@ namespace MyprojecsApp
         }
         public static T[] Slice(T[] Arr, int BeginIndex, int EndIndex)
         {
-            T[] Arr2 = new T[EndIndex-BeginIndex-1];
+            T[] Arr2 = new T[EndIndex-BeginIndex];
             for (int i = 0; i < Arr2.Length; i++)
             {
                 Arr2[i] = Arr[BeginIndex];

@@ -459,11 +459,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\projects\\HW-14-04-20\\MyprojecsApp.csproj",
+      "projectUniqueName": "C:\\projects\\HW-16-04-20\\MyprojecsApp.csproj",
       "projectName": "MyprojecsApp",
-      "projectPath": "C:\\projects\\HW-14-04-20\\MyprojecsApp.csproj",
+      "projectPath": "C:\\projects\\HW-16-04-20\\MyprojecsApp.csproj",
       "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
-      "outputPath": "C:\\projects\\HW-14-04-20\\obj\\",
+      "outputPath": "C:\\projects\\HW-16-04-20\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\HP\\AppData\\Roaming\\NuGet\\NuGet.Config"

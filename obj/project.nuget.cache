@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "7wARQwpc4oUaQ9lBUf4bTKBTRZzdNotuscG4xj6R0Jhx5ABesYiqeuHsYrvNg3T538xysNqQyGK+OeenOsYoYg==",
+  "dgSpecHash": "puNf9wt9AjjEs/85f6zRPoanEZ5IYjT2oYlyTn4fQhNjvLSwYq0dOXxkG7y2HZ6wcYam8XhbHswYqIjrcmxJUg==",
   "success": true,
-  "projectFilePath": "C:\\projects\\HW-14-04-20\\MyprojecsApp.csproj",
+  "projectFilePath": "C:\\projects\\HW-16-04-20\\MyprojecsApp.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\HP\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
     "C:\\Users\\HP\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",
