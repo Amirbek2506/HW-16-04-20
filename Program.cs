@@ -7,15 +7,15 @@ namespace MyprojecsApp
     {
         static void Main(string[] args)
         {
-            int [] InputArr=new int []{2,4,6,8,10,12};
-            foreach(var i in ArrayHelper<int>.Slice(InputArr,1,5))
+            int[] InputArr = new int[] { 2, 4, 6, 8, 10, 12 };
+            foreach (var i in ArrayHelper<int>.Slice(InputArr,-3))
             {
-                System.Console.WriteLine(i);
+               Console.Write($"{i}  ");
             }
-            Console.WriteLine($"Удаленный элемент массив:  {ArrayHelper<int>.Pop(ref InputArr)}");
-            Console.WriteLine($"Добавлено еще элемент с конца массива!\nДлина обновленный массив:  {ArrayHelper<int>.Push(ref InputArr,15)}");
+            Console.WriteLine($"\nУдаленный элемент массив:  {ArrayHelper<int>.Pop(ref InputArr)}");
+            Console.WriteLine($"Добавлено еще элемент с конца массива!\nДлина обновленный массив:  {ArrayHelper<int>.Push(ref InputArr, 15)}");
             Console.WriteLine($"Удаленный элемент массив:  {ArrayHelper<int>.Shift(ref InputArr)}");
-            Console.WriteLine($"Добавлено еще элемент с началого массива!\nДлина обновленный массив:  {ArrayHelper<int>.UnShift(ref InputArr,34)}");
+            Console.WriteLine($"Добавлено еще элемент с началого массива!\nДлина обновленный массив:  {ArrayHelper<int>.UnShift(ref InputArr, 34)}");
             Console.ReadKey();
         }
     }
@@ -47,17 +47,37 @@ namespace MyprojecsApp
             int LengthUpdatedArray = NewArray.Length;
             return LengthUpdatedArray;
         }
-        public static T[] Slice(T[] Arr, int BeginIndex, int EndIndex)
+        public static T[] Slice(T[] Arr, int BeginIndex, int EndIndex = 0)
         {
-            T[] Arr2 = new T[EndIndex-BeginIndex];
+            int bb=0, ee=0;
+            if (BeginIndex >= 0 && EndIndex >= 0)
+            {
+                bb = BeginIndex;
+                ee = EndIndex;
+            }
+            else if (BeginIndex < 0 && EndIndex == 0)
+            {
+                bb=Arr.Length+BeginIndex;
+                ee=Arr.Length;
+            }
+            else if (BeginIndex>Arr.Length)
+            {
+                bb=0;
+                ee=0;
+            }
+            else if(BeginIndex>=0 && EndIndex<0)
+            {
+                bb=BeginIndex;
+                ee=Arr.Length+EndIndex;
+            }
+            T[] Arr2 = new T[Math.Abs(ee-bb)];
             for (int i = 0; i < Arr2.Length; i++)
             {
-                Arr2[i] = Arr[BeginIndex];
-                BeginIndex++;
+                Arr2[i] = Arr[bb];
+                bb++;
             }
 
             return Arr2;
         }
     }
 }
-//Это не все...
